@@ -49,8 +49,20 @@ main div {
       column-gap: 2rem;
       justify-content: center;
       justify-items: center; } }
-  main div p {
-    padding: 50px; }
+
+p.mainp {
+  padding: 50px;
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  background-color: aquamarine;
+  height: 30px; }
+
+p.titulo {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  background-color: aquamarine; }
 
 footer {
   text-align: center;
