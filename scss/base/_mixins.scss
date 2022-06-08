@@ -1,0 +1,97 @@
+
+
+
+@mixin medidas ($swidth,$height) {
+
+    width: $swidth;
+    height: $height;
+
+}
+
+@mixin grid {
+
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 0.05fr;
+    grid-template-areas: "mainp mainp"
+                        "imagen1 imagen2"
+                        "imagen3 imagen4";
+                        height: 60vh;
+
+    justify-content: center;
+    justify-items: center;
+
+    @media screen and (min-width:600px) {
+    
+
+        .mainNosotros{
+        
+            grid-template-areas: "mainp mainp mainp mainp"
+                                
+                                "imagen1 imagen2 imagen3 imagen4";                     ;
+            
+            column-gap: 2rem;
+    
+            justify-content: center;
+            justify-items: center;
+    
+        }
+    
+    
+    
+        .mainblog{
+            
+    
+            grid-template-areas:  
+                                  "cepillado lipopapada"
+                                  "ortodoncia blanqueamiento";
+                                  column-gap: 2rem;
+                                  justify-content: center;
+                                  justify-items: center;
+    
+                           
+                        
+    
+                                  
+        }
+    }
+
+    @media screen and (min-width:1025px) {
+    
+
+        .mainNosotros{
+        
+            grid-template-areas: "mainp mainp mainp mainp"
+                                
+                                "imagen1 imagen2 imagen3 imagen4";                     ;
+            
+            column-gap: 2rem;
+    
+            justify-content: center;
+            justify-items: center;
+    
+        }
+        
+        .mainblog{
+        
+
+            grid-template-areas:  
+                                  "cepillado lipopapada"
+                                  "ortodoncia blanqueamiento";
+                                  column-gap: 2rem;
+                                  justify-content: center;
+                                  justify-items: center;
+    
+                           
+                        
+    
+                                  
+        }
+    }
+ 
+ 
+
+}
+
+
+
