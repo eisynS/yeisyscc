@@ -3,14 +3,16 @@
 @import"base/mixins";
 @import"base/condicionales";
 @import"base/extend";
-
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 
 //nesting
 
 
 header{
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
+    background-color: #00FFAB;
+
    h1{
     text-decoration: none;
     color: $color-principal;  
@@ -19,15 +21,16 @@ header{
     font-family: cursive; 
     font-size: $media-principal/4;
     text-align: center;
-    padding: 10px;
+   
    }
 
    nav{
+       background-color: #14C38E;
+      
        li{
            @extend %botones;
            
-
-        
+       
         
        }
     
@@ -40,7 +43,7 @@ header{
 
 main div{
     @include grid;
-    padding: 50px;
+    padding: 40px;
     
 
 
@@ -49,12 +52,13 @@ main div{
  }
 
  p.mainp{
-    
+    background-color: #B8F1B0;
         padding: 50px;
         text-align: center;
         color: black;
-        font-size: 25px;
-        background-color: aquamarine;
+        font-size: 15px;
+        
+        
         height: 30px;
      
         
@@ -63,36 +67,72 @@ main div{
   p.titulo{
       color: black;
       text-align: center;
-      font-size: 25px;
-      background-color: aquamarine;
+      font-size: 20px;
+      background-color: #E3FCBF;
+      
+     
 
 
   }
 
 
+
+
+.imagen2{
+    grid-area: imagen2;
+    background-color: aquamarine;
+    
+
+}
+
+.imagen3{
+    grid-area: imagen3;
+    background-color: aquamarine;
+}
+
+.imagen4{
+    grid-area: imagen4;
+    background-color: aquamarine;
+}
+.imagen1{
+    grid-area: imagen1;
+    background-color: aquamarine;
+
+ 
+}
+
 footer{ 
-    text-align: center;
-    padding: 300px;
+   
+    padding: 100px;
     height: 10px;
 
     
     
 }
 
-.imagen2{
-    grid-area: imagen2;
+div.stilotabla{
+background-color: #B8F1B0;
+    padding: 10px;
+    display: flex;
+    font-size: 35px;
+    flex-direction: column;
+  
+    align-items: center;
+
+    
 }
 
-.imagen3{
-    grid-area: imagen3;
+div.pedircita{
+    background-color:#B8F1B0 ;
 }
+div.link-redes{
+    display: flex;
 
-.imagen4{
-    grid-area: imagen4;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    justify-content: space-around;
+    background-color: #B8F1B0
 }
-.imagen1{
-    grid-area: imagen1;
-
- 
-}
+    
 
